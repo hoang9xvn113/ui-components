@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.simple-document-wrapper {
+    box-sizing: border-box;
+
+    width: 512px;
+    height: 140px;
+}
+
+.simple-document-content {
+
+    cursor: pointer;
+
+    width: 464px;
+    height: 94px;
+
+    text-align: center;
+
+    padding: 23px 24px;
+
+    /* Base/White */
+
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+.upload-icon-wrapper {
+    /* Featured icon */
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 40px;
+    height: 40px;
+
+    /* doCal/Bg Selected Color */
+
+    background: #FFF0F1;
+    border-radius: 28px;
+    position: relative;
+}
+
+.upload-content-wrapper {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.upload-icon {
+
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+
+    left: 50%;
+    top: 50%;
+
+    /*color: #BA4726;*/
+
+    /* doDrive/Normal Color */
+
+    /*border: 1px solid #BA4726;*/
+}
+
+.upload-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #344054;
+}
+
+.upload-description {
+
+    margin-top: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    text-align: center;
+
+    color: #98A2B3;
+}
+
+.upload-file-item {
+    
+    box-sizing: border-box;
+
+    height: 76px;
+    background: #FFFFFF;
+    /* doDrive/Normal Color */
+
+    padding: 16px 24px;
+
+    margin-bottom: 16px;
+
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+}
+
+.upload-file-item__percent {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    color: #344054;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.upload-file-item__icon {
+
+    /* doDrive/Normal Color */
+
+    cursor: pointer;
+
+    color: #667085;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    display: inline-flex;
+    flex: none;
+}
+
+.upload-file-item--error {
+    box-sizing: border-box;
+
+    height: 76px;
+    /*background: #FFFFFF;*/
+    background: #FFF2F0;
+    color: #FF3838;
+    /* doDrive/Normal Color */
+
+    padding: 16px 24px;
+
+    margin-bottom: 16px;
+
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+}
+
+.upload-file-item--error .upload-file-item__icon {
+    color: #FF3838;
+}
